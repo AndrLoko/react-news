@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
-
-
+import { formatDate } from '../../helpers/formatDate';
+import styles from './styles.modules.css';
 
 const Header = () => {
     return (
-        <header>
-            Header
+        <header className={styles.header}>
+            <h1 className={styles.title}>NEWS REACTIFY</h1>
+            <p className={styles.date}>{formatDate(new Date())}</p>
         </header>
     )
 }
